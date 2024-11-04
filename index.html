@@ -61,9 +61,47 @@
       <section>
         <h2>Cat Form</h2>
         <form action="https://freecatphotoapp.com/submit-cat-photo">
-          <input type="text" name="catphotourl" placeholder="cat photo URL"/>
+          <fieldset>
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <label for=""
+              ><input
+              checked
+                type="radio"
+                id="indoor"
+                name="indoor-outdoor"
+                value="indoor"
+              />Indoor</label
+            >
+            <label
+              ><input
+                type="radio"
+                id="outdoor"
+                name="indoor-outdoor"
+                value="outdoor"
+              />Outdoor</label
+            >
+          </fieldset>
+          <fieldset>
+            <legend>What's your cat's personality?</legend>
+            <input type="checkbox" checked name="personality" id="loving" value="loving" />
+            <label for="looking">Loving</label>
+            <input type="checkbox" name="personality" id="lazy" value="lazy" />
+            <label for="lazy">Lazy</label>
+            <input id="energetic" type="checkbox" name="personality" value="energetic"/>
+            <label for="energetic">Energetic</label>
+          </fieldset>
+          <input
+            required
+            type="text"
+            name="catphotourl"
+            placeholder="cat photo URL"
+          />
+          <button type="submit">Submit</button>
         </form>
       </section>
     </main>
+    <footer>
+      <p>No Copyright - MeCodeCamp.org</p>
+    </footer>
   </body>
 </html>
